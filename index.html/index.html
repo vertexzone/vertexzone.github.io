@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VERTEXWEB Code Copier</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:22px;background:#080d18;color:#f3f6ff;font-family:Arial,sans-serif}
+main{max-width:900px;margin:20px auto;background:#111b2d;border:1px solid #263954;border-radius:14px;padding:22px}
+h1{margin-top:0;font-size:24px}p{color:#b7c4d9;line-height:1.6}
+button{background:linear-gradient(100deg,#00e5ff,#9b5cff);color:#07101c;border:0;border-radius:8px;padding:14px 20px;font-size:16px;font-weight:bold;cursor:pointer;width:100%;margin:12px 0}
+textarea{width:100%;height:62vh;resize:vertical;background:#050914;color:#dceaff;border:1px solid #344863;border-radius:8px;padding:14px;font:12px/1.5 monospace;white-space:pre;}
+#status{min-height:24px;color:#7ef0c0;font-weight:bold}
+</style>
+</head>
+<body>
+<main>
+<h1>VERTEXWEB — Full HTML Code</h1>
+<p>Button dabao, poora code copy ho jayega. Agar automatic copy allow na ho, code box ko select karke manually copy kar sakte ho.</p>
+<button id="copyBtn" type="button">COPY FULL CODE</button>
+<div id="status" role="status"></div>
+<textarea id="codeBox" spellcheck="false" aria-label="Complete HTML source code">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;meta name="theme-color" content="#050711"&gt;
+&lt;title&gt;VERTEXWEB.DEV | Digital Innovation Studio&lt;/title&gt;
+&lt;style&gt;
+:root{--bg:#050711;--card:#0d1424;--cyan:#00e5ff;--purple:#9b5cff;--text:#f5f7ff;--muted:#a5aec4}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Arial,sans-serif;overflow-x:hidden}
+a{text-decoration:none;color:inherit}button,input,textarea,select{font:inherit}button{cursor:pointer}
+.container{width:90%;max-width:1150px;margin:auto}
+.gradient{background:linear-gradient(100deg,var(--cyan),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
+header{position:sticky;top:0;z-index:1000;background:#050711f2;border-bottom:1px solid #17243a;backdrop-filter:blur(15px)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:900}
+.logo-icon{width:35px;height:35px;border:2px solid var(--cyan);transform:rotate(45deg);display:grid;place-items:center}
+.logo-icon span{transform:rotate(-45deg);color:var(--cyan)}
+.nav-links{display:flex;gap:23px;align-items:center}
+.nav-links a{font-size:12px;color:#c6d0e4}.nav-links a:hover{color:var(--cyan)}
+.menu-btn{display:none;background:none;border:0;color:var(--cyan);font-size:27px}
+.hero{min-height:620px;display:flex;align-items:center;position:relative}
+.hero-content{max-width:720px;padding:90px 0}
+.tag{color:var(--cyan);font-size:11px;letter-spacing:4px;font-weight:bold;margin-bottom:22px}
+.hero h1{font-size:clamp(43px,8vw,82px);line-height:1.04;letter-spacing:-3px;margin-bottom:25px}
+.hero p{color:var(--muted);font-size:15px;line-height:1.9;max-width:590px}
+.buttons{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;justify-content:center;align-items:center;padding:13px 21px;border-radius:5px;font-size:12px;font-weight:bold;border:1px solid var(--cyan);transition:.3s}
+.btn-primary{background:linear-gradient(100deg,var(--cyan),var(--purple));color:#050711;border:0}
+.btn-outline{color:var(--cyan);background:transparent}.btn:hover{transform:translateY(-3px);box-shadow:0 8px 25px #00e5ff22}
+.section{padding:85px 0}.section-title{text-align:center;margin-bottom:45px}
+.section-title span{color:var(--cyan);font-size:11px;letter-spacing:4px}
+.section-title h2{font-size:clamp(30px,5vw,44px);margin-top:12px}
+.section-title p{color:var(--muted);font-size:13px;margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:linear-gradient(145deg,#111c30,#090e1b);border:1px solid #1b2a43;border-radius:12px;padding:25px;transition:.3s;min-width:0}
+.card:hover{transform:translateY(-5px);border-color:var(--cyan)}
+.card-icon{font-size:27px;color:var(--cyan);margin-bottom:18px}
+.card h3{font-size:18px;margin-bottom:12px}.card p{font-size:13px;color:var(--muted);line-height:1.8}
+.work-card{padding:0;overflow:hidden}
+.app-logo{width:72px;height:72px;object-fit:cover;border-radius:16px;background:#101a2d;border:1px solid #263750;margin:20px auto 0;display:block}
+.app-download{display:inline-flex;margin-top:12px;padding:10px 15px;border-radius:5px;background:linear-gradient(100deg,var(--cyan),var(--purple));color:#050711;font-weight:bold;font-size:12px}
+.status-pill{display:inline-block;font-size:10px;padding:5px 8px;border:1px solid #ff6464;color:#ff8888;border-radius:20px;margin-left:8px}.work-preview{height:165px;display:grid;place-items:center;background:radial-gradient(circle at 30% 40%,#00e5ff33,transparent 35%),radial-gradient(circle at 80% 70%,#a45cff44,transparent 35%),#0b1220}
+.preview-logo{font-size:27px;font-weight:900;letter-spacing:2px}.work-info{padding:22px}.work-info p{margin:10px 0 15px}
+.work-label{font-size:10px;color:var(--cyan);border:1px solid #00e5ff55;padding:6px 9px;border-radius:20px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:40px}
+.stat{text-align:center;padding:23px 10px;background:#0c1423;border:1px solid #1b2a43;border-radius:10px}
+.stat strong{display:block;font-size:28px;color:var(--cyan)}.stat span{display:block;font-size:11px;color:var(--muted);margin-top:7px}
+.founder{text-align:center}.avatar{width:70px;height:70px;border-radius:50%;margin:0 auto 17px;display:grid;place-items:center;font-size:27px;font-weight:bold;background:linear-gradient(130deg,var(--cyan),var(--purple));color:#050711}
+.role{color:var(--cyan);font-size:11px;margin-bottom:12px}
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.contact-info p{color:var(--muted);line-height:1.8;font-size:14px}
+.contact-detail{padding:17px;margin-top:15px;border:1px solid #1b2a43;border-radius:8px;background:#0c1423}
+.contact-detail small{color:var(--cyan);display:block;margin-bottom:7px}
+.contact-form,.admin-box{background:#0d1424;padding:25px;border:1px solid #1b2a43;border-radius:12px}
+label{font-size:12px;color:#c5d1e5}
+input,textarea,select{width:100%;padding:13px;margin:8px 0 15px;border:1px solid #263750;border-radius:6px;background:#070c17;color:white;outline:none}
+input:focus,textarea:focus,select:focus{border-color:var(--cyan)}
+textarea{min-height:100px;resize:vertical}.contact-form button{width:100%}
+.review-box{text-align:center;max-width:650px;margin:auto;background:#0d1424;border:1px solid #1b2a43;padding:30px;border-radius:12px}
+.review-box p{color:var(--muted);font-size:14px;line-height:1.8;margin-top:12px}
+footer{padding:30px 0;text-align:center;border-top:1px solid #17243a;color:var(--muted);font-size:12px;line-height:2}
+.whatsapp{position:fixed;right:20px;bottom:22px;z-index:900;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:#0dcc76;color:white;font-size:26px}
+.popup-overlay{display:none;position:fixed;inset:0;z-index:2000;background:#000b;align-items:center;justify-content:center;padding:20px}
+.popup{width:100%;max-width:390px;background:#101a2d;border:1px solid var(--cyan);border-radius:14px;padding:30px;text-align:center;position:relative}
+.popup p{color:var(--muted);font-size:14px;line-height:1.7;margin-top:12px}
+.close-popup{position:absolute;right:14px;top:10px;background:none;border:0;color:white;font-size:23px}
+.admin-section{display:none;min-height:80vh;padding:60px 0}
+.admin-box{max-width:850px;margin:0 auto 20px}
+.admin-heading{display:flex;justify-content:space-between;gap:15px;align-items:center;flex-wrap:wrap;margin-bottom:20px}
+.admin-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}
+.admin-tab{background:#101a2d;border:1px solid #263750;color:white;padding:10px 14px;border-radius:5px;font-size:12px}
+.admin-tab.active{border-color:var(--cyan);color:var(--cyan)}
+.admin-panel{display:none}.admin-panel.active{display:block}
+.admin-item{padding:16px;margin:12px 0;background:#080e1b;border:1px solid #263750;border-radius:8px;overflow-wrap:anywhere}
+.admin-item p{font-size:13px;color:var(--muted);line-height:1.8;white-space:pre-line;margin:9px 0}
+.small-btn{padding:8px 12px;border:1px solid var(--cyan);background:transparent;color:var(--cyan);border-radius:5px;margin:5px 5px 0 0;font-size:11px}
+.danger{border-color:#ff6464;color:#ff6464}.empty-state{text-align:center;color:var(--muted);padding:25px;border:1px dashed #263750;border-radius:8px}
+.admin-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.admin-stat{background:#080e1b;border:1px solid #263750;padding:18px;border-radius:8px;text-align:center}
+.admin-stat strong{display:block;color:var(--cyan);font-size:25px}.admin-stat span{font-size:11px;color:var(--muted)}
+.notice{font-size:12px;color:#ffcf78;line-height:1.7;margin-top:15px}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.contact-wrap{grid-template-columns:1fr}.nav-links{display:none;position:absolute;top:72px;left:0;width:100%;background:#080d19;padding:20px;flex-direction:column;align-items:flex-start}.nav-links.show{display:flex}.menu-btn{display:block}}
+@media(max-width:560px){.hero{min-height:550px}.hero h1{letter-spacing:-2px}.section{padding:65px 0}.grid{grid-template-columns:1fr}.stats,.admin-stats{grid-template-columns:1fr}}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header&gt;&lt;div class="container nav"&gt;
+&lt;a href="#home" class="logo"&gt;&lt;div class="logo-icon"&gt;&lt;span&gt;V&lt;/span&gt;&lt;/div&gt;&lt;div&gt;VERTEX&lt;span class="gradient"&gt;WEB.DEV&lt;/span&gt;&lt;/div&gt;&lt;/a&gt;
+&lt;button class="menu-btn" id="menuBtn" aria-label="Open menu"&gt;☰&lt;/button&gt;
+&lt;nav class="nav-links" id="navLinks"&gt;
+&lt;a href="#home"&gt;HOME&lt;/a&gt;&lt;a href="#services"&gt;SERVICES&lt;/a&gt;&lt;a href="#work"&gt;OUR WORK&lt;/a&gt;&lt;a href="#appStore"&gt;APP STORE&lt;/a&gt;&lt;a href="#team"&gt;TEAM&lt;/a&gt;&lt;a href="#contact"&gt;CONTACT&lt;/a&gt;&lt;a href="#" id="adminNav"&gt;ADMIN&lt;/a&gt;
+&lt;/nav&gt;&lt;/div&gt;&lt;/header&gt;
+&lt;main id="mainSite"&gt;
+&lt;section class="hero" id="home"&gt;&lt;div class="container"&gt;&lt;div class="hero-content"&gt;
+&lt;div class="tag"&gt;// DIGITAL INNOVATION STUDIO&lt;/div&gt;
+&lt;h1 id="heroHeading"&gt;BUILD YOUR&lt;br&gt;&lt;span class="gradient"&gt;DIGITAL FUTURE.&lt;/span&gt;&lt;/h1&gt;
+&lt;p id="heroDescription"&gt;We transform your ideas into powerful digital experiences. From professional websites to custom digital solutions, we help your vision move forward.&lt;/p&gt;
+&lt;div class="buttons"&gt;&lt;a class="btn btn-primary" href="#contact"&gt;START YOUR PROJECT ↗&lt;/a&gt;&lt;a class="btn btn-outline" href="#work"&gt;EXPLORE WORK&lt;/a&gt;&lt;a class="btn btn-outline" href="#playStore" id="explorePlayStoreBtn"&gt;EXPLORE PLAY STORE ↗&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;
+&lt;section class="section" id="services"&gt;&lt;div class="container"&gt;
+&lt;div class="section-title"&gt;&lt;span&gt;// WHAT WE DO&lt;/span&gt;&lt;h2&gt;Our &lt;span class="gradient"&gt;Services.&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Digital solutions designed around your ideas.&lt;/p&gt;&lt;/div&gt;
+&lt;div class="grid" id="servicesGrid"&gt;
+&lt;article class="card"&gt;&lt;div class="card-icon"&gt;⌘&lt;/div&gt;&lt;h3&gt;Website Development&lt;/h3&gt;&lt;p&gt;Modern, responsive and professional websites for businesses and brands.&lt;/p&gt;&lt;/article&gt;
+&lt;article class="card"&gt;&lt;div class="card-icon"&gt;▣&lt;/div&gt;&lt;h3&gt;App Development&lt;/h3&gt;&lt;p&gt;Custom app concepts and digital experiences designed for mobile users.&lt;/p&gt;&lt;/article&gt;
+&lt;article class="card"&gt;&lt;div class="card-icon"&gt;✧&lt;/div&gt;&lt;h3&gt;UI / UX Design&lt;/h3&gt;&lt;p&gt;Clean, attractive and user-friendly interfaces for digital products.&lt;/p&gt;&lt;/article&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;
+&lt;section class="section" id="work"&gt;&lt;div class="container"&gt;
+&lt;div class="section-title"&gt;&lt;span&gt;// SELECTED PROJECTS&lt;/span&gt;&lt;h2&gt;Our &lt;span class="gradient"&gt;Work.&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;A showcase of our digital concepts and development work.&lt;/p&gt;&lt;/div&gt;
+&lt;div class="grid" id="workGrid"&gt;&lt;/div&gt;
+&lt;div class="stats"&gt;&lt;div class="stat"&gt;&lt;strong id="enquiryCount"&gt;0&lt;/strong&gt;&lt;span&gt;ENQUIRIES ON THIS DEVICE&lt;/span&gt;&lt;/div&gt;&lt;div class="stat"&gt;&lt;strong id="projectCount"&gt;3&lt;/strong&gt;&lt;span&gt;PROJECT SHOWCASES&lt;/span&gt;&lt;/div&gt;&lt;div class="stat"&gt;&lt;strong&gt;24/7&lt;/strong&gt;&lt;span&gt;ONLINE ENQUIRY ACCESS&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;section class="section" id="apps"&gt;&lt;div class="container"&gt;
+&lt;div class="section-title"&gt;&lt;span&gt;// DOWNLOAD CENTER&lt;/span&gt;&lt;h2&gt;Apps &amp;amp; &lt;span class="gradient"&gt;Games.&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Explore apps and games published by VERTEXWEB.DEV.&lt;/p&gt;&lt;/div&gt;
+&lt;div class="grid" id="appGrid"&gt;&lt;div class="empty-state"&gt;No apps published yet.&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;section class="section" id="team"&gt;&lt;div class="container"&gt;
+&lt;div class="section-title"&gt;&lt;span&gt;// THE PEOPLE BEHIND THE WORK&lt;/span&gt;&lt;h2&gt;Meet The &lt;span class="gradient"&gt;Team.&lt;/span&gt;&lt;/h2&gt;&lt;/div&gt;
+&lt;div class="grid"&gt;
+&lt;div class="card founder"&gt;&lt;div class="avatar"&gt;G&lt;/div&gt;&lt;h3&gt;Gaurav&lt;/h3&gt;&lt;div class="role"&gt;FOUNDER&lt;/div&gt;&lt;p&gt;Creative direction and website development.&lt;/p&gt;&lt;/div&gt;
+&lt;div class="card founder"&gt;&lt;div class="avatar"&gt;Y&lt;/div&gt;&lt;h3&gt;YASH&lt;/h3&gt;&lt;div class="role"&gt;CO-FOUNDER&lt;/div&gt;&lt;p&gt;Team collaboration and creative development.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;
+&lt;section class="section" id="reviews"&gt;&lt;div class="container"&gt;
+&lt;div class="section-title"&gt;&lt;span&gt;// CLIENT FEEDBACK&lt;/span&gt;&lt;h2&gt;Real &lt;span class="gradient"&gt;Reviews.&lt;/span&gt;&lt;/h2&gt;&lt;/div&gt;
+&lt;div class="review-box"&gt;&lt;h2 class="gradient"&gt;Your feedback matters.&lt;/h2&gt;&lt;p&gt;Verified client reviews will appear here after real projects are completed. We don't publish made-up ratings or testimonials.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;section class="section" id="contact"&gt;&lt;div class="container"&gt;
+&lt;div class="section-title"&gt;&lt;span&gt;// LET'S CONNECT&lt;/span&gt;&lt;h2&gt;Start Your &lt;span class="gradient"&gt;Project.&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Tell us what you want to build.&lt;/p&gt;&lt;/div&gt;
+&lt;div class="contact-wrap"&gt;&lt;div class="contact-info"&gt;&lt;h2&gt;Have an idea?&lt;/h2&gt;&lt;p style="margin-top:15px"&gt;Share your project details with us. We'll get in touch to discuss your requirements.&lt;/p&gt;
+&lt;div class="contact-detail"&gt;&lt;small&gt;WHATSAPP&lt;/small&gt;&lt;a href="https://wa.me/918299430855" target="_blank" rel="noopener"&gt;+91 8299430855&lt;/a&gt;&lt;/div&gt;
+&lt;div class="contact-detail"&gt;&lt;small&gt;EMAIL&lt;/small&gt;&lt;a href="mailto:gauravsingh8299430@gmail.com"&gt;gauravsingh8299430@gmail.com&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;form class="contact-form" id="contactForm"&gt;
+&lt;label for="clientName"&gt;Your Name&lt;/label&gt;&lt;input id="clientName" required placeholder="Enter your name"&gt;
+&lt;label for="clientPhone"&gt;WhatsApp / Contact Number&lt;/label&gt;&lt;input id="clientPhone" required type="tel" placeholder="Enter contact number"&gt;
+&lt;label for="projectType"&gt;Project Type&lt;/label&gt;&lt;select id="projectType" required&gt;&lt;option value=""&gt;Select project type&lt;/option&gt;&lt;option&gt;Website Development&lt;/option&gt;&lt;option&gt;App Development&lt;/option&gt;&lt;option&gt;UI / UX Design&lt;/option&gt;&lt;option&gt;Other&lt;/option&gt;&lt;/select&gt;
+&lt;label for="projectDetails"&gt;Project Details&lt;/label&gt;&lt;textarea id="projectDetails" required placeholder="Tell us about your project..."&gt;&lt;/textarea&gt;
+&lt;button class="btn btn-primary" type="submit"&gt;SEND ENQUIRY ↗&lt;/button&gt;
+&lt;/form&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;
+&lt;/main&gt;
+
+&lt;section class="admin-section" id="admin" style="display:none"&gt;&lt;div class="container"&gt;
+&lt;div class="section-title"&gt;&lt;span&gt;// PRIVATE DASHBOARD&lt;/span&gt;&lt;h2&gt;Admin &lt;span class="gradient"&gt;Portal.&lt;/span&gt;&lt;/h2&gt;&lt;/div&gt;
+&lt;div class="admin-box" id="loginBox"&gt;&lt;h2&gt;Admin Login&lt;/h2&gt;
+&lt;label for="adminName"&gt;Select Admin&lt;/label&gt;&lt;select id="adminName"&gt;&lt;option&gt;Gaurav&lt;/option&gt;&lt;option&gt;YASH&lt;/option&gt;&lt;/select&gt;
+&lt;label for="adminId"&gt;Admin ID&lt;/label&gt;&lt;input id="adminId" placeholder="Enter admin ID" autocomplete="username"&gt;
+&lt;label for="adminPassword"&gt;Password&lt;/label&gt;&lt;input id="adminPassword" type="password" placeholder="Enter password" autocomplete="current-password"&gt;
+&lt;button class="btn btn-primary" style="width:100%" id="loginBtn"&gt;LOGIN&lt;/button&gt;&lt;p id="loginMessage" style="color:#ff7777;margin-top:12px"&gt;&lt;/p&gt;
+&lt;p class="notice"&gt;Security note: This is a client-side demonstration login. Do not use these credentials for sensitive information. For a public website, use a secure server-side authentication system.&lt;/p&gt;
+&lt;button class="small-btn" id="backBtn"&gt;Back to Website&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="admin-box" id="dashboard" style="display:none"&gt;
+&lt;p class="notice"&gt;Admin changes and enquiries are stored in this browser only. A shared database is needed to sync across visitors and devices.&lt;/p&gt;&lt;div class="admin-heading"&gt;&lt;h2&gt;Welcome, &lt;span class="gradient" id="loggedAdmin"&gt;&lt;/span&gt;&lt;/h2&gt;&lt;button class="small-btn danger" id="logoutBtn"&gt;LOGOUT&lt;/button&gt;&lt;/div&gt;
+&lt;div class="admin-stats"&gt;&lt;div class="admin-stat"&gt;&lt;strong id="dashEnquiries"&gt;0&lt;/strong&gt;&lt;span&gt;ENQUIRIES&lt;/span&gt;&lt;/div&gt;&lt;div class="admin-stat"&gt;&lt;strong id="dashProjects"&gt;0&lt;/strong&gt;&lt;span&gt;PROJECTS&lt;/span&gt;&lt;/div&gt;&lt;div class="admin-stat"&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;span&gt;ADMIN ACCOUNTS&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="admin-tabs"&gt;&lt;button class="admin-tab active" data-tab="enquiriesPanel"&gt;ENQUIRIES&lt;/button&gt;&lt;button class="admin-tab" data-tab="projectsPanel"&gt;PROJECTS&lt;/button&gt;&lt;button class="admin-tab" data-tab="appsPanel"&gt;APP PUBLISHER&lt;/button&gt;&lt;button class="admin-tab" data-tab="websitePanel"&gt;WEBSITE SETTINGS&lt;/button&gt;&lt;/div&gt;
+&lt;div class="admin-panel active" id="enquiriesPanel"&gt;&lt;h3&gt;Customer Enquiries&lt;/h3&gt;&lt;div id="adminEnquiries" style="margin-top:15px"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="admin-panel" id="projectsPanel"&gt;&lt;h3&gt;Manage Projects&lt;/h3&gt;
+&lt;form id="projectForm" style="margin-top:15px"&gt;&lt;label for="newProjectName"&gt;Project Name&lt;/label&gt;&lt;input id="newProjectName" required placeholder="Project name"&gt;&lt;label for="newProjectCategory"&gt;Project Category&lt;/label&gt;&lt;input id="newProjectCategory" required placeholder="Website / App / Design"&gt;&lt;label for="newProjectDescription"&gt;Project Description&lt;/label&gt;&lt;textarea id="newProjectDescription" required placeholder="Project description"&gt;&lt;/textarea&gt;&lt;button class="btn btn-primary" type="submit"&gt;ADD PROJECT&lt;/button&gt;&lt;/form&gt;
+&lt;div id="adminProjects" style="margin-top:20px"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="admin-panel" id="appsPanel"&gt;&lt;h3&gt;Publish an App / Game&lt;/h3&gt;
+&lt;form id="appForm" style="margin-top:15px"&gt;&lt;label for="newAppName"&gt;App / Game Name&lt;/label&gt;&lt;input id="newAppName" required placeholder="Example: Kanpur Run"&gt;
+&lt;label for="newAppDescription"&gt;Description&lt;/label&gt;&lt;textarea id="newAppDescription" required placeholder="Tell visitors what this app does"&gt;&lt;/textarea&gt;
+&lt;label for="newAppLink"&gt;APK Download Link&lt;/label&gt;&lt;input id="newAppLink" type="url" required placeholder="https://.../your-app.apk"&gt;
+&lt;label for="newAppLogo"&gt;App Logo (image file)&lt;/label&gt;&lt;input id="newAppLogo" type="file" accept="image/png,image/jpeg,image/webp" required&gt;
+&lt;button class="btn btn-primary" type="submit"&gt;PUBLISH APP ON WEBSITE&lt;/button&gt;&lt;/form&gt;
+&lt;div id="adminApps" style="margin-top:20px"&gt;&lt;/div&gt;
+&lt;hr style="border:0;border-top:1px solid #263750;margin:28px 0"&gt;
+&lt;h3&gt;Coming Soon Games / Play Store Poster&lt;/h3&gt;
+&lt;p class="notice"&gt;Game launch se pehle poster add karein. APK link abhi optional hai; baad mein LAUNCH button se link add kar sakte hain.&lt;/p&gt;
+&lt;form id="storeGameForm" style="margin-top:15px"&gt;
+&lt;label for="storeGameName"&gt;Game Name&lt;/label&gt;&lt;input id="storeGameName" required placeholder="Example: Kanpur City Drive"&gt;
+&lt;label for="storeGameCategory"&gt;Category&lt;/label&gt;&lt;select id="storeGameCategory" required&gt;&lt;option value=""&gt;Select category&lt;/option&gt;&lt;option&gt;Action&lt;/option&gt;&lt;option&gt;Racing&lt;/option&gt;&lt;option&gt;Adventure&lt;/option&gt;&lt;option&gt;Puzzle&lt;/option&gt;&lt;option&gt;Arcade&lt;/option&gt;&lt;option&gt;Simulation&lt;/option&gt;&lt;option&gt;Other&lt;/option&gt;&lt;/select&gt;
+&lt;label for="storeGameDescription"&gt;Game Description&lt;/label&gt;&lt;textarea id="storeGameDescription" required placeholder="Describe your upcoming game"&gt;&lt;/textarea&gt;
+&lt;label for="storeGamePoster"&gt;Game Poster / Cover Image&lt;/label&gt;&lt;input id="storeGamePoster" type="file" accept="image/png,image/jpeg,image/webp" required&gt;
+&lt;label for="storeGameApk"&gt;APK Link (optional — add later)&lt;/label&gt;&lt;input id="storeGameApk" type="url" placeholder="https://.../game.apk"&gt;
+&lt;button class="btn btn-primary" type="submit"&gt;ADD COMING SOON GAME&lt;/button&gt;
+&lt;/form&gt;
+&lt;div id="adminStoreGames" style="margin-top:20px"&gt;&lt;/div&gt;
+&lt;p class="notice"&gt;Poster and game details are saved in this browser. To show them to all visitors, the website needs a shared database/backend. Image limit: 1.5 MB.&lt;/p&gt;
+&lt;p class="notice"&gt;This adds an APK download listing to this website. It does not submit the app to Google Play. Use a trusted HTTPS file link and only publish apps you have permission to distribute.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="admin-panel" id="websitePanel"&gt;&lt;h3&gt;Website Settings&lt;/h3&gt;
+&lt;form id="settingsForm" style="margin-top:15px"&gt;&lt;label for="settingHeading"&gt;Hero Heading&lt;/label&gt;&lt;input id="settingHeading" required&gt;&lt;label for="settingDescription"&gt;Hero Description&lt;/label&gt;&lt;textarea id="settingDescription" required&gt;&lt;/textarea&gt;&lt;button class="btn btn-primary" type="submit"&gt;SAVE WEBSITE SETTINGS&lt;/button&gt;&lt;/form&gt;
+&lt;p class="notice"&gt;Changes are saved only in this browser. Other visitors' devices will not automatically receive these changes without a shared database/backend.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/section&gt;
+
+&lt;footer&gt;&lt;div class="container"&gt;&lt;div class="logo" style="justify-content:center;margin-bottom:12px"&gt;&lt;div class="logo-icon"&gt;&lt;span&gt;V&lt;/span&gt;&lt;/div&gt;&lt;div&gt;VERTEX&lt;span class="gradient"&gt;WEB.DEV&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;Building your digital future.&lt;/p&gt;&lt;p&gt;© &lt;span id="year"&gt;&lt;/span&gt; VERTEXWEB.DEV. All rights reserved.&lt;/p&gt;&lt;/div&gt;&lt;/footer&gt;
+&lt;a class="whatsapp" href="https://wa.me/918299430855" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"&gt;✆&lt;/a&gt;
+&lt;div class="popup-overlay" id="welcomePopup"&gt;&lt;div class="popup"&gt;&lt;button class="close-popup" id="closePopup" aria-label="Close"&gt;×&lt;/button&gt;&lt;div class="tag"&gt;// WELCOME TO VERTEXWEB.DEV&lt;/div&gt;&lt;h2&gt;Let's Build Your &lt;span class="gradient"&gt;Future.&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Have a website or app idea? Let's discuss your next project.&lt;/p&gt;&lt;a href="#contact" class="btn btn-primary" id="popupContact" style="margin-top:20px"&gt;START A PROJECT ↗&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;iframe id="playStoreFrame" title="WORLDTEX PLAY Store" style="display:none;position:fixed;inset:0;width:100%;height:100%;border:0;z-index:5000;background:#080b16"&gt;&lt;/iframe&gt;
+
+&lt;script&gt;
+const WORLDTEX_PLAY_STORE_HTML = "\u003c!DOCTYPE html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n\u003cmeta charset=\"UTF-8\"\u003e\u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003e\u003cmeta name=\"theme-color\" content=\"#080b16\"\u003e\n\u003ctitle\u003eWORLDTEX PLAY | PLAX STORE\u003c/title\u003e\n\u003cstyle\u003e\n*{margin:0;padding:0;box-sizing:border-box}:root{--bg:#080b16;--card:#11182a;--purple:#8055ff;--cyan:#00d9ff;--text:#f4f5ff;--muted:#929bb2}\nbody{background:var(--bg);color:var(--text);font-family:Arial,sans-serif;min-height:100vh}button,input{font:inherit}button{cursor:pointer}\n.splash{position:fixed;inset:0;z-index:1000;background:radial-gradient(circle at center,#20204c,#080b16 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;transition:.6s}.splash.hide{opacity:0;visibility:hidden}.splash-logo{width:82px;height:82px;border-radius:25px;display:grid;place-items:center;background:linear-gradient(135deg,#8356ff,#00cfff);font-size:40px;box-shadow:0 0 45px #7955ff77;margin-bottom:22px}.splash h1{font-size:30px;letter-spacing:3px}.splash-powered{color:#a78bfa;font-size:12px;letter-spacing:3px;margin-top:12px;font-weight:bold}.loader{width:110px;height:3px;background:#292d45;margin-top:35px;border-radius:10px;overflow:hidden}.loader:after{content:\"\";display:block;width:45%;height:100%;background:var(--cyan);animation:load 1.5s infinite}@keyframes load{from{transform:translateX(-100%)}to{transform:translateX(250%)}}\nheader{height:76px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12;position:sticky;top:0;z-index:20;background:#080b16ed;backdrop-filter:blur(15px)}\n.brand{display:flex;align-items:center;gap:12px}.brand-icon{background:linear-gradient(135deg,#8055ff,#00cfff);width:43px;height:43px;border-radius:13px;display:grid;place-items:center;font-size:23px}.brand h2{font-size:19px;letter-spacing:1px}.brand small{display:block;color:#a78bfa;font-size:9px;letter-spacing:1.5px;margin-top:4px}\n.back{color:white;text-decoration:none;background:#151c30;border:1px solid #39435e;padding:11px 14px;border-radius:11px;font-size:12px}\n.container{width:90%;max-width:1250px;margin:auto}.hero{margin-top:28px;min-height:300px;padding:35px;border-radius:23px;overflow:hidden;position:relative;background:radial-gradient(circle at 85% 35%,#7245dd77,transparent 35%),linear-gradient(120deg,#191633,#101a32 65%,#15233a);border:1px solid #ffffff14;display:flex;align-items:center}\n.hero-content{position:relative;z-index:2;max-width:550px}.hero-label{color:#9e83ff;font-size:11px;font-weight:bold;letter-spacing:3px;margin-bottom:18px}.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.12}.hero h1 span{background:linear-gradient(90deg,#a78bfa,#00dcff);-webkit-background-clip:text;color:transparent}.hero p{color:#aeb8cf;margin-top:15px;line-height:1.7}.hero-art{position:absolute;right:7%;font-size:130px;filter:drop-shadow(0 15px 25px #0008)}\n.search-box{display:flex;align-items:center;gap:12px;background:#11182a;border:1px solid #28344c;padding:13px 16px;border-radius:13px;margin-top:28px}.search-box input{background:transparent;border:0;outline:0;color:white;width:100%;font-size:14px}.search-box input::placeholder{color:#75819b}\n.section{margin-top:36px}.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.section-head h2{font-size:21px}.section-head small{color:var(--muted)}.categories{display:flex;gap:10px;overflow-x:auto;padding:4px 0 12px;scrollbar-width:none}.categories button{white-space:nowrap;padding:10px 18px;background:#141b2e;color:#aeb8cf;border:1px solid #29334b;border-radius:30px}.categories button.active{color:white;background:#7048db;border-color:#8055ff}\n.game-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.game-card{background:var(--card);border:1px solid #ffffff12;border-radius:17px;overflow:hidden;transition:.25s;cursor:pointer}.game-card:hover{transform:translateY(-5px);border-color:#8055ff;box-shadow:0 12px 30px #0004}.game-art{height:155px;display:grid;place-items:center;font-size:64px;position:relative}.game-art img{width:100%;height:100%;object-fit:cover}.game-info{padding:14px}.game-info h3{font-size:15px}.game-info p{color:var(--muted);font-size:11px;margin-top:7px;line-height:1.6}.game-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:14px;gap:5px}.game-bottom span{font-size:11px;color:#a78bfa}.get-btn{background:#7048db;color:white;border:0;border-radius:8px;padding:8px 14px;font-size:11px}.get-btn:disabled{opacity:.45;cursor:not-allowed}.empty{text-align:center;padding:40px;color:var(--muted);display:none}\nfooter{border-top:1px solid #ffffff12;margin-top:60px;padding:35px 5%;text-align:center;color:#8994aa;font-size:12px;line-height:2}footer strong{color:#a78bfa}.modal{display:none;position:fixed;inset:0;background:#000b;z-index:100;align-items:center;justify-content:center;padding:18px}.modal.show{display:flex}.modal-box{width:100%;max-width:440px;background:#11182a;border:1px solid #35405a;border-radius:20px;overflow:hidden}.modal-art{height:180px;display:grid;place-items:center;font-size:75px}.modal-art img{width:100%;height:100%;object-fit:cover}.modal-body{padding:22px}.modal-body p{color:#aab4c9;line-height:1.7;font-size:13px;margin-top:12px}.modal-actions{display:flex;gap:10px;margin-top:22px}.modal-actions button{flex:1;padding:13px;border-radius:10px;border:0;font-weight:bold}.download{background:#8055ff;color:white}.close{background:#273149;color:white}\n@media(max-width:850px){.game-grid{grid-template-columns:repeat(3,1fr)}.hero-art{right:3%;font-size:95px;opacity:.8}}@media(max-width:600px){header{height:65px;padding:0 5%}.brand h2{font-size:16px}.brand-icon{width:38px;height:38px}.container{width:92%}.hero{min-height:260px;padding:25px 20px}.hero-art{font-size:65px;right:5%;top:35px;opacity:.45}.hero-content{max-width:100%}.hero h1{font-size:34px}.hero p{font-size:12px;max-width:250px}.game-grid{grid-template-columns:repeat(2,1fr);gap:12px}.game-art{height:125px;font-size:52px}.game-info{padding:11px}.game-info h3{font-size:13px}.get-btn{padding:8px 10px}.section-head h2{font-size:18px}}\n\u003c/style\u003e\u003c/head\u003e\u003cbody\u003e\n\u003cdiv class=\"splash\" id=\"splash\"\u003e\u003cdiv class=\"splash-logo\"\u003e🎮\u003c/div\u003e\u003ch1\u003eWORLDTEX PLAY\u003c/h1\u003e\u003cdiv class=\"splash-powered\"\u003ePOWERED BY VERTEXWEB.DEV\u003c/div\u003e\u003cdiv class=\"loader\"\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cheader\u003e\u003cdiv class=\"brand\"\u003e\u003cdiv class=\"brand-icon\"\u003e🎮\u003c/div\u003e\u003cdiv\u003e\u003ch2\u003eWORLDTEX PLAY\u003c/h2\u003e\u003csmall\u003ePOWERED BY VERTEXWEB.DEV\u003c/small\u003e\u003c/div\u003e\u003c/div\u003e\u003ca class=\"back\" href=\"#\" onclick=\"parent.closePlayStore();return false\"\u003e← BACK TO WEBSITE\u003c/a\u003e\u003c/header\u003e\n\u003cmain class=\"container\"\u003e\u003csection class=\"hero\"\u003e\u003cdiv class=\"hero-content\"\u003e\u003cdiv class=\"hero-label\"\u003eWELCOME TO YOUR GAMING WORLD\u003c/div\u003e\u003ch1\u003ePLAY MORE.\u003cbr\u003e\u003cspan\u003eEXPLORE MORE.\u003c/span\u003e\u003c/h1\u003e\u003cp\u003eDiscover amazing games, explore new adventures and enjoy your favourite gaming experience.\u003c/p\u003e\u003c/div\u003e\u003cdiv class=\"hero-art\"\u003e🕹️\u003c/div\u003e\u003c/section\u003e\n\u003cdiv class=\"search-box\"\u003e\u003cspan\u003e🔍\u003c/span\u003e\u003cinput id=\"search\" type=\"search\" placeholder=\"Search your favourite games...\"\u003e\u003c/div\u003e\n\u003csection class=\"section\"\u003e\u003cdiv class=\"section-head\"\u003e\u003ch2\u003eExplore Categories\u003c/h2\u003e\u003csmall\u003eDiscover your style\u003c/small\u003e\u003c/div\u003e\u003cdiv class=\"categories\" id=\"categories\"\u003e\u003cbutton class=\"active\" data-category=\"All\"\u003eAll Games\u003c/button\u003e\u003cbutton data-category=\"Action\"\u003eAction\u003c/button\u003e\u003cbutton data-category=\"Racing\"\u003eRacing\u003c/button\u003e\u003cbutton data-category=\"Adventure\"\u003eAdventure\u003c/button\u003e\u003cbutton data-category=\"Puzzle\"\u003ePuzzle\u003c/button\u003e\u003cbutton data-category=\"Arcade\"\u003eArcade\u003c/button\u003e\u003cbutton data-category=\"Simulation\"\u003eSimulation\u003c/button\u003e\u003cbutton data-category=\"Other\"\u003eOther\u003c/button\u003e\u003c/div\u003e\u003c/section\u003e\n\u003csection class=\"section\" id=\"games\"\u003e\u003cdiv class=\"section-head\"\u003e\u003ch2\u003e🔥 Featured Games\u003c/h2\u003e\u003csmall id=\"gameCount\"\u003e0 Games\u003c/small\u003e\u003c/div\u003e\u003cdiv class=\"game-grid\" id=\"gameGrid\"\u003e\u003c/div\u003e\u003cdiv class=\"empty\" id=\"empty\"\u003eNo games found. Try another search.\u003c/div\u003e\u003c/section\u003e\u003c/main\u003e\n\u003cfooter\u003e\u003ch3 style=\"color:white;letter-spacing:2px\"\u003eWORLDTEX PLAY\u003c/h3\u003e\u003cstrong\u003ePOWERED BY VERTEXWEB.DEV\u003c/strong\u003e\u003cp\u003eDiscover. Play. Experience.\u003c/p\u003e\u003cp\u003e© \u003cspan id=\"year\"\u003e\u003c/span\u003e WORLDTEX. All rights reserved.\u003c/p\u003e\u003c/footer\u003e\n\u003cdiv class=\"modal\" id=\"gameModal\"\u003e\u003cdiv class=\"modal-box\"\u003e\u003cdiv class=\"modal-art\" id=\"modalArt\"\u003e\u003c/div\u003e\u003cdiv class=\"modal-body\"\u003e\u003ch2 id=\"modalName\"\u003e\u003c/h2\u003e\u003cp id=\"modalCategory\"\u003e\u003c/p\u003e\u003cp id=\"modalDescription\"\u003e\u003c/p\u003e\u003cdiv class=\"modal-actions\"\u003e\u003cbutton class=\"download\" id=\"modalDownload\"\u003eDOWNLOAD APK\u003c/button\u003e\u003cbutton class=\"close\" id=\"closeModal\"\u003eCLOSE\u003c/button\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\n\u003cscript\u003e\n'use strict';\nconst KEY='vertexPlayGamesV2';\nconst APP_KEY='vertexApps';\nconst defaults=[\n{name:'City Runner',category:'Adventure',emoji:'🏃',color:'linear-gradient(135deg,#193d6c,#126c83)',description:'Run through exciting levels, collect coins and avoid obstacles.',apk:'',visible:true},\n{name:'Traffic Racer',category:'Racing',emoji:'🏎️',color:'linear-gradient(135deg,#56265f,#b44b63)',description:'Drive your car through busy roads and beat your high score.',apk:'',visible:true},\n{name:'Fruit Master',category:'Arcade',emoji:'🍉',color:'linear-gradient(135deg,#245b36,#55a65b)',description:'Enjoy a colourful fruit cutting arcade challenge.',apk:'',visible:true},\n{name:'Bubble Shooter',category:'Puzzle',emoji:'🫧',color:'linear-gradient(135deg,#164d82,#6553bd)',description:'Match colourful bubbles and complete challenging levels.',apk:'',visible:true},\n{name:'Mini Cricket',category:'Action',emoji:'🏏',color:'linear-gradient(135deg,#27533e,#408e66)',description:'Play a fun cricket game and hit exciting shots.',apk:'',visible:true},\n{name:'Food Shop',category:'Simulation',emoji:'🍔',color:'linear-gradient(135deg,#713d28,#c47c3d)',description:'Manage your own food shop and serve your customers.',apk:'',visible:true},\n{name:'Maze Escape',category:'Puzzle',emoji:'🧩',color:'linear-gradient(135deg,#35436d,#6768a9)',description:'Find your way out of tricky mazes.',apk:'',visible:true},\n{name:'Sky Jumper',category:'Arcade',emoji:'🚀',color:'linear-gradient(135deg,#27466e,#367ea9)',description:'Jump higher, collect rewards and explore the sky.',apk:'',visible:true}\n];\nfunction readGames(){\n let custom=[];\n try{const saved=localStorage.getItem(KEY);if(saved!==null){const parsed=JSON.parse(saved);if(Array.isArray(parsed))custom=parsed;}}catch(e){}\n let published=[];\n try{const apps=JSON.parse(localStorage.getItem(APP_KEY)||'[]');if(Array.isArray(apps))published=apps.map(app=\u003e({id:'published-'+app.id,name:app.name,category:app.category||'Other',emoji:'📲',logo:app.logo||'',description:app.description||'Published by VERTEXWEB.DEV',apk:app.link||'',visible:app.visible!==false,color:'linear-gradient(135deg,#312e81,#0891b2)'}));}catch(e){}\n return [...defaults,...custom,...published];\n}\nlet games=readGames(),activeCategory='All';\nconst $=id=\u003edocument.getElementById(id);\nfunction safeText(v){return String(v??'')}\nfunction renderGames(){const q=$('search').value.trim().toLowerCase();const filtered=games.filter(g=\u003eg.visible!==false\u0026\u0026(activeCategory==='All'||g.category===activeCategory)\u0026\u0026[g.name,g.category,g.description].join(' ').toLowerCase().includes(q));$('gameGrid').innerHTML='';filtered.forEach(g=\u003e{const card=document.createElement('article');card.className='game-card';const art=document.createElement('div');art.className='game-art';art.style.background=g.color||'linear-gradient(135deg,#312e81,#0891b2)';if(g.logo){const img=document.createElement('img');img.src=g.logo;img.alt=safeText(g.name)+' logo';img.onerror=()=\u003e{img.remove();art.textContent=g.emoji||'🎮'};art.appendChild(img)}else art.textContent=g.emoji||g.icon||'🎮';const info=document.createElement('div');info.className='game-info';const title=document.createElement('h3');title.textContent=safeText(g.name);const desc=document.createElement('p');desc.textContent=safeText(g.description);const bottom=document.createElement('div');bottom.className='game-bottom';const status=document.createElement('span');status.textContent=g.apk?'READY TO PLAY':'COMING SOON';const btn=document.createElement('button');btn.className='get-btn';btn.textContent=g.apk?'GET':'VIEW';btn.addEventListener('click',()=\u003eopenGame(g));bottom.append(status,btn);info.append(title,desc,bottom);card.append(art,info);card.addEventListener('click',()=\u003eopenGame(g));$('gameGrid').appendChild(card)});$('gameCount').textContent=filtered.length+' Games';$('empty').style.display=filtered.length?'none':'block'}\nfunction openGame(g){$('modalArt').innerHTML='';$('modalArt').style.background=g.color||'linear-gradient(135deg,#312e81,#0891b2)';if(g.logo){const img=document.createElement('img');img.src=g.logo;img.alt=safeText(g.name)+' logo';$('modalArt').appendChild(img)}else $('modalArt').textContent=g.emoji||g.icon||'🎮';$('modalName').textContent=safeText(g.name);$('modalCategory').textContent=safeText(g.category)+' • '+(g.apk?'Available':'Coming Soon');$('modalDescription').textContent=safeText(g.description);const dl=$('modalDownload');dl.disabled=!g.apk;dl.textContent=g.apk?'DOWNLOAD APK':'COMING SOON';dl.onclick=()=\u003e{if(g.apk){window.open(g.apk,'_blank','noopener,noreferrer')}};$('gameModal').classList.add('show')}\nfunction closeModal(){$('gameModal').classList.remove('show')}\ndocument.querySelectorAll('#categories button').forEach(b=\u003eb.addEventListener('click',()=\u003e{activeCategory=b.dataset.category;document.querySelectorAll('#categories button').forEach(x=\u003ex.classList.toggle('active',x===b));renderGames()}));$('search').addEventListener('input',renderGames);$('closeModal').addEventListener('click',closeModal);$('gameModal').addEventListener('click',e=\u003e{if(e.target===$('gameModal'))closeModal()});document.addEventListener('keydown',e=\u003e{if(e.key==='Escape')closeModal()});window.addEventListener('storage',e=\u003e{if(e.key===KEY||e.key===APP_KEY){games=readGames();renderGames()}});$('year').textContent=new Date().getFullYear();renderGames();setTimeout(()=\u003e$('splash').classList.add('hide'),1400);\n\u003c/script\u003e\u003c/body\u003e\u003c/html\u003e";
+function openPlayStore(event){
+ if(event) event.preventDefault();
+ const frame=document.getElementById('playStoreFrame');
+ if(!frame.srcdoc) frame.srcdoc=WORLDTEX_PLAY_STORE_HTML;
+ document.getElementById('mainSite').style.display='none';
+ document.getElementById('admin').style.display='none';
+ document.querySelector('body &gt; header').style.display='none';
+ document.querySelector('body &gt; footer').style.display='none';
+ const wa=document.querySelector('.whatsapp'); if(wa) wa.style.display='none';
+ const popup=document.getElementById('welcomePopup'); if(popup) popup.style.display='none';
+ frame.style.display='block';
+ window.scrollTo(0,0);
+}
+function closePlayStore(){
+ const frame=document.getElementById('playStoreFrame');
+ frame.style.display='none';
+ document.getElementById('mainSite').style.display='block';
+ document.querySelector('body &gt; header').style.display='block';
+ document.querySelector('body &gt; footer').style.display='block';
+ const wa=document.querySelector('.whatsapp'); if(wa) wa.style.display='grid';
+ window.scrollTo(0,0);
+}
+document.getElementById('explorePlayStoreBtn').addEventListener('click',openPlayStore);
+&lt;/script&gt;
+&lt;script&gt;
+(function(){
+"use strict";
+const $=id=&gt;document.getElementById(id);
+const ADMIN_ID="nexura_studio-2";
+const ADMIN_PASSWORD="andaman nikobar";
+const KEYS={enquiries:"vertexEnquiries",projects:"vertexProjects",settings:"vertexSettings",apps:"vertexApps"};
+function read(key,fallback){try{const value=localStorage.getItem(key);return value===null?fallback:JSON.parse(value)}catch(e){return fallback}}
+function write(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true}catch(e){alert("Could not save data in this browser.");return false}}
+const defaultProjects=[
+{name:"Business Website",category:"WEB DESIGN",description:"A modern digital presence concept for businesses and brands."},
+{name:"Mobile App Interface",category:"APP CONCEPT",description:"A clean and responsive interface concept for mobile users."},
+{name:"Custom Digital Solution",category:"CUSTOM PROJECT",description:"Digital experiences planned around specific project requirements."}
+];
+const getProjects=()=&gt;read(KEYS.projects,defaultProjects.map(p=&gt;({...p,visible:true})));
+const getApps=()=&gt;read(KEYS.apps,[]);
+const getEnquiries=()=&gt;read(KEYS.enquiries,[]);
+const getSettings=()=&gt;read(KEYS.settings,{heading:"BUILD YOUR DIGITAL FUTURE.",description:"We transform your ideas into powerful digital experiences. From professional websites to custom digital solutions, we help your vision move forward."});
+$("menuBtn").addEventListener("click",()=&gt;$("navLinks").classList.toggle("show"));
+document.querySelectorAll(".nav-links a").forEach(a=&gt;a.addEventListener("click",()=&gt;$("navLinks").classList.remove("show")));
+$("year").textContent=new Date().getFullYear();
+
+function renderProjects(){
+const stored=getProjects();let migrated=false;stored.forEach((p,i)=&gt;{if(!p.id){p.id="legacy-"+i+"-"+p.name;migrated=true}if(p.visible===undefined){p.visible=true;migrated=true}});if(migrated)write(KEYS.projects,stored);
+const grid=$("workGrid");grid.innerHTML="";
+getProjects().filter(p=&gt;p.visible!==false).forEach(p=&gt;{
+const article=document.createElement("article");article.className="card work-card";
+const preview=document.createElement("div");preview.className="work-preview";
+const logo=document.createElement("div");logo.className="preview-logo gradient";logo.textContent="VERTEX";preview.appendChild(logo);
+const info=document.createElement("div");info.className="work-info";
+const label=document.createElement("span");label.className="work-label";label.textContent=p.category;
+const title=document.createElement("h3");title.textContent=p.name;
+const desc=document.createElement("p");desc.textContent=p.description;
+info.append(label,title,desc);article.append(preview,info);grid.appendChild(article);
+});
+$("projectCount").textContent=getProjects().filter(p=&gt;p.visible!==false).length;$("dashProjects").textContent=getProjects().length;
+}
+function renderApps(){
+const grid=$("appGrid");grid.innerHTML="";const apps=getApps();
+if(!apps.length){grid.innerHTML='&lt;div class="empty-state"&gt;No apps published yet.&lt;/div&gt;';return}
+apps.forEach(app=&gt;{const card=document.createElement("article");card.className="card";
+if(app.logo){const img=document.createElement("img");img.className="app-logo";img.src=app.logo;img.alt=app.name+" logo";card.appendChild(img)}
+const body=document.createElement("div");body.style.padding="20px";const title=document.createElement("h3");title.textContent=app.name;
+const desc=document.createElement("p");desc.textContent=app.description;const link=document.createElement("a");link.className="app-download";link.href=app.link;link.target="_blank";link.rel="noopener noreferrer";link.textContent="DOWNLOAD APK ↓";
+body.append(title,desc,link);card.appendChild(body);grid.appendChild(card)});
+}
+function updateCounts(){const count=getEnquiries().length;$("enquiryCount").textContent=count;$("dashEnquiries").textContent=count}
+function applySettings(){const s=getSettings();$("heroHeading").textContent=s.heading;$("heroDescription").textContent=s.description;$("settingHeading").value=s.heading;$("settingDescription").value=s.description}
+renderProjects();renderApps();updateCounts();applySettings();
+
+// Enquiry submission: saved in this browser and also opened as a pre-filled WhatsApp message.
+$("contactForm").addEventListener("submit",function(e){
+e.preventDefault();
+const enquiry={id:Date.now(),name:$("clientName").value.trim(),phone:$("clientPhone").value.trim(),type:$("projectType").value,details:$("projectDetails").value.trim(),date:new Date().toLocaleString()};
+if(!enquiry.name||!enquiry.phone||!enquiry.type||!enquiry.details){alert("Please fill in all fields.");return}
+const data=getEnquiries();data.unshift(enquiry);
+if(!write(KEYS.enquiries,data))return;
+updateCounts();
+const message=`New VERTEX WEB.DEV enquiry%0AName: ${encodeURIComponent(enquiry.name)}%0APhone: ${encodeURIComponent(enquiry.phone)}%0AProject: ${encodeURIComponent(enquiry.type)}%0ADetails: ${encodeURIComponent(enquiry.details)}`;
+$("contactForm").reset();
+window.open("https://wa.me/918299430855?text="+message,"_blank","noopener");
+alert("Enquiry saved on this device. WhatsApp will open so you can send it.");
+});
+
+// Admin navigation and login
+function showAdmin(){
+$("mainSite").style.display="none";$("admin").style.display="block";window.scrollTo(0,0);
+$("loginBox").style.display="block";$("dashboard").style.display="none";$("loginMessage").textContent="";
+}
+function showWebsite(){ $("admin").style.display="none";$("mainSite").style.display="block";window.scrollTo(0,0)}
+$("adminNav").addEventListener("click",e=&gt;{e.preventDefault();showAdmin()});
+$("backBtn").addEventListener("click",showWebsite);
+$("loginBtn").addEventListener("click",()=&gt;{
+const id=$("adminId").value.trim().toLowerCase(),password=$("adminPassword").value.trim();
+if(id===ADMIN_ID.toLowerCase()&amp;&amp;password===ADMIN_PASSWORD){
+$("loginMessage").textContent="";$("loginBox").style.display="none";$("dashboard").style.display="block";
+$("loggedAdmin").textContent=$("adminName").value;renderAdmin();applySettings();
+}else{$("loginMessage").textContent="Incorrect Admin ID or password."}
+});
+$("adminPassword").addEventListener("keydown",e=&gt;{if(e.key==="Enter")$("loginBtn").click()});
+$("logoutBtn").addEventListener("click",()=&gt;{ $("dashboard").style.display="none";$("loginBox").style.display="block";$("adminId").value="";$("adminPassword").value="";showWebsite()});
+
+function renderEnquiries(){
+const box=$("adminEnquiries");box.innerHTML="";const items=getEnquiries();
+if(!items.length){box.innerHTML='&lt;div class="empty-state"&gt;No enquiries received on this device yet.&lt;/div&gt;';return}
+items.forEach(item=&gt;{
+const div=document.createElement("div");div.className="admin-item";
+const heading=document.createElement("strong");heading.textContent=item.name+" — "+item.type;
+const p=document.createElement("p");p.textContent=`Contact: ${item.phone}\nDetails: ${item.details}\nDate: ${item.date}`;
+const del=document.createElement("button");del.className="small-btn danger";del.textContent="DELETE";
+del.addEventListener("click",()=&gt;{if(confirm("Delete this enquiry?")){write(KEYS.enquiries,getEnquiries().filter(x=&gt;x.id!==item.id));renderEnquiries();updateCounts()}});
+div.append(heading,p,del);box.appendChild(div);
+});
+}
+function renderAdminProjects(){
+const box=$("adminProjects");box.innerHTML="";
+getProjects().forEach(p=&gt;{
+const div=document.createElement("div");div.className="admin-item";
+const title=document.createElement("strong");title.textContent=p.name+" — "+p.category;
+const status=document.createElement("span");status.className="status-pill";status.textContent=p.visible===false?"HIDDEN / BANNED":"LIVE ON WEBSITE";if(p.visible!==false){status.style.borderColor="#00d69a";status.style.color="#00d69a"}
+const desc=document.createElement("p");desc.textContent=p.description;
+const toggle=document.createElement("button");toggle.className="small-btn"+(p.visible===false?"":" danger");toggle.textContent=p.visible===false?"UNBAN / SHOW ON WEBSITE":"BAN / HIDE FROM WEBSITE";
+toggle.addEventListener("click",()=&gt;{const list=getProjects();const item=list.find(x=&gt;x.id===p.id);if(item){item.visible=item.visible===false;write(KEYS.projects,list);renderProjects();renderAdminProjects()}});
+const del=document.createElement("button");del.className="small-btn danger";del.textContent="DELETE PERMANENTLY";
+del.addEventListener("click",()=&gt;{if(confirm("Permanently delete this project?")){write(KEYS.projects,getProjects().filter(x=&gt;x.id!==p.id));renderProjects();renderAdminProjects()}});
+div.append(title,status,desc,toggle,del);box.appendChild(div);
+});
+if(!getProjects().length)box.innerHTML='&lt;div class="empty-state"&gt;No projects added yet.&lt;/div&gt;';
+}
+function renderAdminApps(){const box=$("adminApps");box.innerHTML="";const apps=getApps();
+if(!apps.length){box.innerHTML='&lt;div class="empty-state"&gt;No apps published yet.&lt;/div&gt;';return}
+apps.forEach(app=&gt;{const div=document.createElement("div");div.className="admin-item";const title=document.createElement("strong");title.textContent=app.name;
+const desc=document.createElement("p");desc.textContent=app.description+"\nAPK: "+app.link;
+const del=document.createElement("button");del.className="small-btn danger";del.textContent="REMOVE APP";del.addEventListener("click",()=&gt;{if(confirm("Remove this app from the website?")){write(KEYS.apps,getApps().filter(x=&gt;x.id!==app.id));renderApps();renderAdminApps()}});
+div.append(title,desc,del);box.appendChild(div)});
+}
+function renderAdminStoreGames(){
+ const box=$("adminStoreGames");if(!box)return;box.innerHTML="";
+ let games=[];try{const saved=localStorage.getItem("vertexPlayGamesV2");games=saved?JSON.parse(saved):[]}catch(e){games=[]}
+ if(!Array.isArray(games))games=[];
+ if(!games.length){box.innerHTML='&lt;div class="empty-state"&gt;No coming-soon games added yet.&lt;/div&gt;';return}
+ games.forEach(game=&gt;{
+  const div=document.createElement("div");div.className="admin-item";
+  const title=document.createElement("strong");title.textContent=game.name||"Untitled game";
+  const status=document.createElement("span");status.className="status-pill";status.textContent=game.visible===false?"HIDDEN":(game.apk?"LIVE / APK READY":"COMING SOON");
+  const desc=document.createElement("p");desc.textContent=(game.category||"Other")+"\n"+(game.description||"")+(game.apk?"\nAPK: "+game.apk:"\nNo APK link yet");
+  const launch=document.createElement("button");launch.className="small-btn";launch.textContent=game.apk?"UPDATE APK LINK":"LAUNCH / ADD APK";
+  launch.addEventListener("click",()=&gt;{const url=prompt("Enter secure HTTPS APK link:",game.apk||"");if(url===null)return;if(!/^https:\/\//i.test(url.trim())){alert("Please enter a valid HTTPS link.");return}const list=JSON.parse(localStorage.getItem("vertexPlayGamesV2")||"[]");const item=list.find(x=&gt;String(x.id)===String(game.id));if(item){item.apk=url.trim();item.visible=true;localStorage.setItem("vertexPlayGamesV2",JSON.stringify(list));renderAdminStoreGames();alert("Game launched. APK link saved.")}});
+  const toggle=document.createElement("button");toggle.className="small-btn";toggle.textContent=game.visible===false?"SHOW GAME":"HIDE GAME";
+  toggle.addEventListener("click",()=&gt;{const list=JSON.parse(localStorage.getItem("vertexPlayGamesV2")||"[]");const item=list.find(x=&gt;String(x.id)===String(game.id));if(item){item.visible=item.visible===false;localStorage.setItem("vertexPlayGamesV2",JSON.stringify(list));renderAdminStoreGames()}});
+  const del=document.createElement("button");del.className="small-btn danger";del.textContent="REMOVE GAME";del.addEventListener("click",()=&gt;{if(confirm("Remove this game from Play Store?")){const list=JSON.parse(localStorage.getItem("vertexPlayGamesV2")||"[]").filter(x=&gt;String(x.id)!==String(game.id));localStorage.setItem("vertexPlayGamesV2",JSON.stringify(list));renderAdminStoreGames()}});
+  div.append(title,status,desc,launch,toggle,del);box.appendChild(div);
+ });
+}
+function renderAdmin(){renderEnquiries();renderAdminProjects();renderAdminApps();renderAdminStoreGames();updateCounts();renderProjects();renderApps()}
+document.querySelectorAll(".admin-tab").forEach(btn=&gt;btn.addEventListener("click",()=&gt;{
+document.querySelectorAll(".admin-tab").forEach(b=&gt;b.classList.remove("active"));
+document.querySelectorAll(".admin-panel").forEach(p=&gt;p.classList.remove("active"));
+btn.classList.add("active");$(btn.dataset.tab).classList.add("active");
+}));
+
+$("projectForm").addEventListener("submit",e=&gt;{
+e.preventDefault();
+const project={id:Date.now()+Math.random(),name:$("newProjectName").value.trim(),category:$("newProjectCategory").value.trim().toUpperCase(),description:$("newProjectDescription").value.trim(),visible:true};
+if(!project.name||!project.category||!project.description)return;
+const projects=getProjects();projects.push(project);
+if(write(KEYS.projects,projects)){$("projectForm").reset();renderProjects();renderAdminProjects();alert("Project added successfully.")}
+});
+$("appForm").addEventListener("submit",e=&gt;{
+e.preventDefault();const file=$("newAppLogo").files[0];const link=$("newAppLink").value.trim();
+if(!file){alert("Please choose an app logo.");return}
+if(file.size&gt;1500000){alert("Please use a logo smaller than 1.5 MB.");return}
+if(!/^https:\/\//i.test(link)){alert("Please enter a secure HTTPS APK link.");return}
+const reader=new FileReader();reader.onload=()=&gt;{const apps=getApps();apps.unshift({id:Date.now()+Math.random(),name:$("newAppName").value.trim(),description:$("newAppDescription").value.trim(),link,logo:reader.result});
+if(write(KEYS.apps,apps)){$("appForm").reset();renderApps();renderAdminApps();alert("App published on your website.")}};reader.onerror=()=&gt;alert("Could not read the logo file.");reader.readAsDataURL(file);
+});
+
+$("storeGameForm").addEventListener("submit",e=&gt;{
+ e.preventDefault();const file=$("storeGamePoster").files[0];const apk=$("storeGameApk").value.trim();
+ if(!file){alert("Please choose a game poster.");return}
+ if(file.size&gt;1500000){alert("Please use a poster smaller than 1.5 MB.");return}
+ if(apk&amp;&amp;!/^https:\/\//i.test(apk)){alert("APK link must start with HTTPS.");return}
+ const reader=new FileReader();reader.onload=()=&gt;{
+  let games=[];try{games=JSON.parse(localStorage.getItem("vertexPlayGamesV2")||"[]")}catch(err){games=[]}if(!Array.isArray(games))games=[];
+  games.push({id:"admin-game-"+Date.now()+"-"+Math.random().toString(36).slice(2),name:$("storeGameName").value.trim(),category:$("storeGameCategory").value,description:$("storeGameDescription").value.trim(),logo:reader.result,emoji:"🎮",color:"linear-gradient(135deg,#312e81,#0891b2)",apk,visible:true});
+  try{localStorage.setItem("vertexPlayGamesV2",JSON.stringify(games));$("storeGameForm").reset();renderAdminStoreGames();alert(apk?"Game added and APK is ready.":"Coming Soon game and poster added successfully.")}catch(err){alert("Could not save. Please use a smaller poster or free up browser storage.")}
+ };reader.onerror=()=&gt;alert("Could not read poster file.");reader.readAsDataURL(file);
+});
+$("settingsForm").addEventListener("submit",e=&gt;{
+e.preventDefault();const settings={heading:$("settingHeading").value.trim(),description:$("settingDescription").value.trim()};
+if(!settings.heading||!settings.description)return;
+if(write(KEYS.settings,settings)){applySettings();alert("Website settings saved in this browser.")}
+});
+
+// Welcome popup, shown once per browser.
+const popupKey="vertexWelcomeSeen";
+if(!sessionStorage.getItem(popupKey)){
+setTimeout(()=&gt;{$("welcomePopup").style.display="flex";sessionStorage.setItem(popupKey,"1")},1800);
+}
+function closePopup(){$("welcomePopup").style.display="none"}
+$("closePopup").addEventListener("click",closePopup);
+$("popupContact").addEventListener("click",closePopup);
+$("welcomePopup").addEventListener("click",e=&gt;{if(e.target===$("welcomePopup"))closePopup()});
+document.addEventListener("keydown",e=&gt;{if(e.key==="Escape")closePopup()});
+})();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</main>
+<script>
+const box = document.getElementById('codeBox');
+const status = document.getElementById('status');
+document.getElementById('copyBtn').addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText(box.value);
+    status.textContent = 'Copied! Ab jahan chaho paste kar do.';
+  } catch (err) {
+    box.focus();
+    box.select();
+    const ok = document.execCommand('copy');
+    status.textContent = ok ? 'Copied! Ab paste kar do.' : 'Auto-copy nahi hua. Code box select hai — Copy option use karo.';
+  }
+});
+</script>
+</body>
+</html>
